@@ -359,7 +359,6 @@ if (document.URL.indexOf("iqiyi.com") >= 0){
 		<div class="bbg">
 			<p style="padding: 10px 0">
 			    </p><p>投资有风险 入市需谨慎</p>
-	       		<p>版权所有：陕西卓创信息科技有限公司</p>
 		    <p></p>
 		</div>
 		<input class="tgName" name="tgName" type="hidden" value="000725">
