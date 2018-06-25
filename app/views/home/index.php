@@ -17,7 +17,7 @@
 				window.link_id = 1211;
 			    login();
 			    getWXInfo($(".wxnumber"),$(".wxImg"));
-			    getLinkInfo();
+			    // getLinkInfo();
 				$('#btnTg').click(function() {
 					$('#moni').show();
 					mnan();
