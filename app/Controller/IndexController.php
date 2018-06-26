@@ -49,11 +49,12 @@ class IndexController extends Home_Controller
             $this->_ckeckData($postData);
             unset($postData['is_submit']);
             $contectData = [
-                'phone'      => $postData['mobile'],
-                'ip'         => getIp(),
-                'time'       => time(),
-                'stock_code' => $postData['Reserve1'],
-                'c'          => $postData['c']
+                'phone'         => $postData['mobile'],
+                'ip'            => getIp(),
+                'time'          => time(),
+                'stock_code'    => $postData['Reserve1'],
+                'c'             => $postData['c'],
+                'form_position' => $postData['form_position']
             ];
             parent::$model->insert('contect', $contectData);
             if(parent::$model->id()) {

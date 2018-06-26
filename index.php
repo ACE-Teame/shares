@@ -6,7 +6,7 @@ header( 'Content-Type:text/html;charset=utf-8 ');
 date_default_timezone_set('PRC');
 define('DIRESEP', DIRECTORY_SEPARATOR);
 define('CHARM', str_replace(array('/', '\\'), DIRESEP, dirname(__FILE__)));
-define('ENVIRONMENT', 'testing');
+define('ENVIRONMENT', 'production');
 
 include "vendor/autoload.php";
 

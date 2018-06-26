@@ -26,10 +26,16 @@ if(typeof(tips) == "undefined"){
       return;
     }
 	var loadi = layer.load(1,{shade: [0.4,'#000']});;
-	var params={ "link_id": window.link_id,"mobile":mobile,"Reserve1":name, "c" : c};
+
+    if (codeBtn == 'btnTg') {
+        var form_position = 'up';
+    } else {
+        var form_position = 'down';
+    }
+	var params={ "link_id": window.link_id,"mobile":mobile,"Reserve1":name, "c" : c, "form_position" : form_position};
 	window.phone = mobile;
      //var url = "http://tginterface.songyutech.com/StatisticsInterface/UserOpt";
-    var url = "http://web.com/git_project/shares/index/submitContect";
+    var url = "http://web.com/shares/index/submitContect";
     $.ajax({
             url: url,
             type: "POST",

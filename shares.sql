@@ -1,7 +1,7 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : localhost_3306
+Source Server         : 本地
 Source Server Version : 50714
 Source Host           : localhost:3306
 Source Database       : shares
@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50714
 File Encoding         : 65001
 
-Date: 2018-06-25 21:23:24
+Date: 2018-06-26 16:24:31
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -27,14 +27,16 @@ CREATE TABLE `contect` (
   `time` int(10) NOT NULL,
   `c` varchar(16) DEFAULT NULL,
   `stock_code` varchar(32) DEFAULT NULL,
-  `link_id` int(11) DEFAULT NULL,
+  `form_position` varchar(16) DEFAULT NULL,
   `reservel` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of contect
 -- ----------------------------
+INSERT INTO `contect` VALUES ('19', null, '16675580215', '127.0.0.1', '1530001305', '', '000002', 'up', null);
+INSERT INTO `contect` VALUES ('20', null, '18245124512', '127.0.0.1', '1530001323', '', '000002', 'down', null);
 
 -- ----------------------------
 -- Table structure for `user`
@@ -55,4 +57,4 @@ CREATE TABLE `user` (
 -- ----------------------------
 -- Records of user
 -- ----------------------------
-INSERT INTO `user` VALUES ('1', 'admin', '$2y$10$BMX/JDTSpXLSHZ/kjUjSmu3JyepTKS4UrTQIGD8NG0Qur.MaZQakC', '1500190776', '1505488344', '1529929400', '127.0.0.1', '1');
+INSERT INTO `user` VALUES ('1', 'admin', '$2y$10$BMX/JDTSpXLSHZ/kjUjSmu3JyepTKS4UrTQIGD8NG0Qur.MaZQakC', '1500190776', '1505488344', '1530001422', '127.0.0.1', '1');

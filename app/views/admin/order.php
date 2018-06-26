@@ -48,6 +48,7 @@
                                 <th>手机号</th>
                                 <th>股票代码</th>
                                 <th>提交时间</th>
+                                <th>提交位置</th>
                                 <th>IP</th>
                             </tr>
                         </thead>
@@ -61,6 +62,7 @@
                                     <td><?php echo $order['phone'] ?></td>
                                     <td><?php echo $order['stock_code'] ?></td>
                                     <td><?php echo get_date($order['time']) ?></td>
+                                    <td><?php echo ($order['form_position'] == 'up') ? '上表单' : '下表单'; ?></td>
                                     <td><?php echo $order['ip'] ?></td>
                                 </tr>
                             <?php endforeach ?>
