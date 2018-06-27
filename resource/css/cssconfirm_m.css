@@ -29,7 +29,7 @@
     float: left;
     cursor: pointer;
     margin: 46px 40px auto 76px;
-    background: url("../Images/bannerWindow/refuse.png") no-repeat;
+    background: url("../images/index1/refuse.png") no-repeat;
 }
 
 .confirm_accept {
@@ -38,7 +38,7 @@
     float: left;
     cursor: pointer;
     margin-top: 46px;
-    background: url("../Images/bannerWindow/accept.png") no-repeat;
+    background: url("../images/index1/accept.png") no-repeat;
 }
 
 .confirm_alignment {

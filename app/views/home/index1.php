@@ -112,7 +112,7 @@
         .bannerBox .zhenguBtn {width:174px;height:71px;line-height:62px;text-align:center;color:#fbe343;font-size:30px;cursor:pointer;background:url(../resource/images/index1/zhenguBtn.jpg)/*tpa=http://www.zx017.net/m/zgjg/imgs/zhenguBtn.jpg*/ no-repeat;float:right;}
         .zhegai {width:100%;height:100%;background-color:rgba(0,0,0,0.8);position:fixed;top:0;left:0;z-index:20;cursor:pointer;display:none;}
         .dialog1 {position:fixed;top:50%;left:50%;width:670px;height:525px;margin-left:-335px;margin-top:-296px;background:url(../resource/images/index1/dialog1.png-11.png)/*tpa=http://www.zx017.net/m/zgjg/imgs/dialog1.png?11*/ no-repeat;z-index:30;display:none;}
-        .dialog1 .circle1 {width:51px;height:51px;position:absolute;right:0;top:-70px;cursor:pointer;background:url(circle1.png)/*tpa=http://www.zx017.net/m/zgjg/imgs/circle1.png*/ no-repeat;}
+        .dialog1 .circle1 {width:51px;height:51px;position:absolute;right:0;top:-70px;cursor:pointer;background:url(../resource/images/index1/circle1.png)/*tpa=http://www.zx017.net/m/zgjg/imgs/circle1.png*/ no-repeat;}
         .dialog1 .result {color:#666666;margin-top:32px;font-size:36px;}
         .dialog1 .result .cName {color:#f90303;font-size:44px;font-weight:bold;margin-right:5px;}
         .dialog1 .according {margin:14px 48px 0 80px;font-size:29px;color:#333;text-align:center;line-height:46px;}
