@@ -331,6 +331,7 @@
     <div class="dialog4_btn  center" id="btn3125">马上抢占名额</div>
     <div class="promise center">中富金石郑重承诺：绝不泄露您的个人信息</div>
 </div>
+<input type="hidden" name="form_position" id="form_position">
 <?php echo js('zfps.js') ?>
 
 <!-- <script src="zfps.js" tppabs="http://www.zx017.net/Scripts/zfps.js"></script> -->
@@ -467,6 +468,7 @@
 
     // 诊股
     $('.zd_btn').click(function () {
+        $("#form_position").val('up');
         zfSendStep("step1");
         other = "A";
         var code =  $('.input_text').val();
@@ -590,6 +592,7 @@
 
     //悬浮诊股
     $(".zhenguBtn").click(function () {
+        $("#form_position").val('down');
         zfSendStep("step1");
         other = "B";
         var code =  $('.code').val();
@@ -643,7 +646,8 @@
                 Reserve1: codeNum,
                 mobile: phoneNum,
                 otherInfo: other,
-                c: c
+                c: c,
+                form_position: $("#form_position").val()
             },
             contentType: 'application/x-www-form-urlencoded; charset=utf-8',
             dataType: 'json',
