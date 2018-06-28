@@ -1,0 +1,4 @@
+访问第二个页面地址 http://xxx.com/index/index1
+
+
+更改/resource/js/thirdajax.js 修改第一二行的url为实际url

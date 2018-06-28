@@ -1,4 +1,5 @@
-var submit_url = "http://web.com/git_project/shares/index/submitContect";
+var submit_url = "http://web.com/shares/index/submitContect";
+var searchStock_url = "http://web.com/shares/index/searchStock";
 
 //其他的股票信息 市净率 总市值
 function getSjvAndZsz(code) {
@@ -187,7 +188,7 @@ function querySharesName(stockNum) {
     }
     $.ajax({
         // url: 'http://www.zx017.net/api/QueryStock',
-        url: 'http://web.com/git_project/shares/index/searchStock',
+        url: searchStock_url,
         type: 'post',
         data: {
             nm: stockNum

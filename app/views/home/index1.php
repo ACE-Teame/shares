@@ -338,6 +338,9 @@
 <script >document.write("<script src='<?php echo base_url('resource/js/thirdajax.js')?>?v="+new Date().getTime()+"'><\/script>");</script>
 <script type="text/javascript">
     var viewPortScale;
+    var GetDefaultStock_url = "<?php echo base_url('index/GetDefaultStock')?>";
+    var GetStockJiangu_url = "<?php echo base_url('index/GetStockJiangu')?>";
+    var GetMarketCount_url = "<?php echo base_url('index/GetMarketCount')?>";
     var dpr = window.devicePixelRatio;
     viewPortScale = 0.5;
     var detectBrowser = function(name) {
@@ -364,7 +367,7 @@
 	function base() {
 
         $.ajax({
-            url: 'http://web.com/git_project/shares/index/GetDefaultStock',
+            url: GetDefaultStock_url,
             type: 'get',
             contentType: 'application/x-www-form-urlencoded; charset=utf-8',
             dataType: 'json',
@@ -381,7 +384,7 @@
 
 
 		 $.ajax({
-            url: 'http://web.com/git_project/shares/index/GetStockJiangu',
+            url: GetStockJiangu_url,
             type: 'post',
             data: {id: 5, num: 6},
             dataType: 'json',
@@ -401,7 +404,7 @@
         });
 
         $.ajax({
-            url: 'http://web.com/git_project/shares/index/GetStockJiangu',
+            url: GetStockJiangu_url,
             type: 'post',
             data: {id: 4, num: 6},
             contentType: 'application/x-www-form-urlencoded; charset=utf-8',
@@ -423,7 +426,7 @@
             });
 
         $.ajax({
-            url: 'http://web.com/git_project/shares/index/GetMarketCount',
+            url: GetMarketCount_url,
             type: 'get',
             contentType: 'application/x-www-form-urlencoded; charset=utf-8',
             dataType: 'json',
