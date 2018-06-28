@@ -37,24 +37,18 @@ class IndexController extends Home_Controller
     {
         $result = file_get_contents('http://www.zx017.net/api/GetMarketCount');
         echo $result;exit;
-        print_r($result);
-        // $result = $this->curl('http://www.zx017.net/api/QueryStock', $postData);
     }
 
     public function GetDefaultStock()
     {
         $result = file_get_contents('http://www.zx017.net/api/GetDefaultStock');
         echo $result;exit;
-        print_r($result);
-        // $result = $this->curl('http://www.zx017.net/api/QueryStock', $postData);
     }
 
     public function GetStockJiangu()
     {
         $result = file_get_contents('http://www.zx017.net/api/GetStockJiangu');
         echo $result;exit;
-        print_r($result);
-        // $result = $this->curl('http://www.zx017.net/api/QueryStock', $postData);
     }
     
     /**
